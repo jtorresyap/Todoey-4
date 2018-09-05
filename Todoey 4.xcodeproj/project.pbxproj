@@ -8,20 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		DE5F4311213F895200F514A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F4310213F895200F514A8 /* AppDelegate.swift */; };
-		DE5F4313213F895200F514A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F4312213F895200F514A8 /* ViewController.swift */; };
+		DE5F4313213F895200F514A8 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F4312213F895200F514A8 /* TodoListViewController.swift */; };
 		DE5F4316213F895200F514A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F4314213F895200F514A8 /* Main.storyboard */; };
 		DE5F4318213F895300F514A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5F4317213F895300F514A8 /* Assets.xcassets */; };
 		DE5F431B213F895300F514A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F4319213F895300F514A8 /* LaunchScreen.storyboard */; };
+		DE5F4324213F897D00F514A8 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5F4322213F897B00F514A8 /* RealmSwift.framework */; };
+		DE5F4325213F897D00F514A8 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE5F4322213F897B00F514A8 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE5F4326213F897E00F514A8 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5F4323213F897D00F514A8 /* Realm.framework */; };
+		DE5F4327213F897E00F514A8 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE5F4323213F897D00F514A8 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE5F432A213F89F000F514A8 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F4329213F89F000F514A8 /* File.swift */; };
+		DE5F432D213F8B4C00F514A8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F432C213F8B4C00F514A8 /* Category.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE5F4328213F897E00F514A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE5F4327213F897E00F514A8 /* Realm.framework in Embed Frameworks */,
+				DE5F4325213F897D00F514A8 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DE5F430D213F895200F514A8 /* Todoey 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todoey 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F4310213F895200F514A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE5F4312213F895200F514A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE5F4312213F895200F514A8 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		DE5F4315213F895200F514A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE5F4317213F895300F514A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5F431A213F895300F514A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5F431C213F895300F514A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5F4322213F897B00F514A8 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		DE5F4323213F897D00F514A8 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		DE5F4329213F89F000F514A8 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		DE5F432C213F8B4C00F514A8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5F4326213F897E00F514A8 /* Realm.framework in Frameworks */,
+				DE5F4324213F897D00F514A8 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +65,9 @@
 		DE5F4304213F895200F514A8 = {
 			isa = PBXGroup;
 			children = (
+				DE5F432B213F8B2E00F514A8 /* Model */,
+				DE5F4323213F897D00F514A8 /* Realm.framework */,
+				DE5F4322213F897B00F514A8 /* RealmSwift.framework */,
 				DE5F430F213F895200F514A8 /* Todoey 4 */,
 				DE5F430E213F895200F514A8 /* Products */,
 			);
@@ -55,13 +85,22 @@
 			isa = PBXGroup;
 			children = (
 				DE5F4310213F895200F514A8 /* AppDelegate.swift */,
-				DE5F4312213F895200F514A8 /* ViewController.swift */,
+				DE5F4312213F895200F514A8 /* TodoListViewController.swift */,
 				DE5F4314213F895200F514A8 /* Main.storyboard */,
 				DE5F4317213F895300F514A8 /* Assets.xcassets */,
 				DE5F4319213F895300F514A8 /* LaunchScreen.storyboard */,
 				DE5F431C213F895300F514A8 /* Info.plist */,
 			);
 			path = "Todoey 4";
+			sourceTree = "<group>";
+		};
+		DE5F432B213F8B2E00F514A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F432C213F8B4C00F514A8 /* Category.swift */,
+				DE5F4329213F89F000F514A8 /* File.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +113,7 @@
 				DE5F4309213F895200F514A8 /* Sources */,
 				DE5F430A213F895200F514A8 /* Frameworks */,
 				DE5F430B213F895200F514A8 /* Resources */,
+				DE5F4328213F897E00F514A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5F4313213F895200F514A8 /* ViewController.swift in Sources */,
+				DE5F4313213F895200F514A8 /* TodoListViewController.swift in Sources */,
+				DE5F432A213F89F000F514A8 /* File.swift in Sources */,
 				DE5F4311213F895200F514A8 /* AppDelegate.swift in Sources */,
+				DE5F432D213F8B4C00F514A8 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +324,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRZBM26GFF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Todoey 4/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.GrowthPilot.Todoey-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,7 +347,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRZBM26GFF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Todoey 4/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.GrowthPilot.Todoey-4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
